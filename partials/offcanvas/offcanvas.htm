@@ -1,0 +1,10 @@
+<div class="offcanvas {{ sPartialClasses }}">
+    <ul>
+        {% set items = ['Catalog', 'News', 'Wish list', 'Contact us'] %}
+        {% for item in items %}
+            <li>
+                <a href="#" class="hover:text-blue-700 active:text-blue-900 focus-visible:outline-blue">{{ item }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

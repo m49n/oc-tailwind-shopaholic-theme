@@ -25,4 +25,30 @@
     right: 50%;
     left: 50%;
   }
+  .offcanvas{
+    position: absolute;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .offcanvas-open{
+    @apply translate-y-full
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 100;
+  }
+  body._noscroll{
+    overflow: hidden;
+    padding-right: 15px;
+  }
 }
